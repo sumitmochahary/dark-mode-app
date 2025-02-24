@@ -3,7 +3,7 @@ import { useState } from "react"
 
 function ModeButton() {
 
-    const [isLightMode,setDarkMode] = useState(false)
+    const [isLightMode,setMode] = useState(false)
 
     useEffect(() => {
         document.body.style.transition= "background-color 0.5s ease-in-out"
@@ -11,7 +11,7 @@ function ModeButton() {
     },[isLightMode])
 
     const toggle = () => {
-        setDarkMode(!isLightMode)
+        setMode(!isLightMode)
     }
 
     return(
